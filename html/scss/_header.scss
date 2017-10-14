@@ -1,0 +1,25 @@
+.nav-link{
+    font-size:.8rem;
+    font-weight:600;
+    text-transform: uppercase;
+    font-family:$base-font;
+}
+.navbar .btn{
+    font-size: .8rem;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .open>.nav-link {
+    color: $primary-color;
+}
+.navbar-light.bg-white{
+    background-color: rgba(255,255,255,.95)!important;
+}
+.navbar-light.sticky-nav{
+    z-index: 9999!important;
+}
+@media (min-width: 992px){
+    .navbar-toggleable-md .navbar-nav .nav-link {
+        padding-right: .9rem;
+        padding-left: .9rem;
+    }
+
+}
