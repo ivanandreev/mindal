@@ -13,6 +13,11 @@ app.get('/', function(request, response) {
   response.render('index.html');
 });
 
+
+app.get('/b2f4745f6637.html', function(request, response) {
+  response.render('b2f4745f6637.html');
+});
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
