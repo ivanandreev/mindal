@@ -13,7 +13,7 @@ var transporter = nodemailer.createTransport({
 
 var mailOptions = {
   from: 'request@hr-mindal.ru',
-  to: 'info@hr-mindal.ru',
+  to: 'ivanandreev.mail@hgmail.com',
   subject: 'Test message',
   text: 'Hello world!'
 };
