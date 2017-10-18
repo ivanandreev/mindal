@@ -46,7 +46,7 @@ app.post('/mail', function(req, res) {
 
 app.get('/processReCaptcha', function(req, res) {
   var gRecaptchaResponse = req.query['g-recaptcha-response'];
-  var secretKey = '6Ld08TQUAAAAAOlfqufbTGoFYGxM8rBmBIkx-6Cc';
+  var secretKey = '6LfxgzQUAAAAABiHxjoZVjiCBsVAsJ3xpF4bL-sE';
   var verificationUrl = 'https://www.google.com/recaptcha/api/siteverify?secret=' + secretKey + '&response=' + gRecaptchaResponse + '&remoteip='+ req.connection.remoteAddress;
 
   request(verificationUrl,function(error,response,body) {
