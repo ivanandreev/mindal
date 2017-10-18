@@ -41,29 +41,29 @@
 								},
 								"g-recaptcha-response":{
 									required:true,
-									remote:'./smart-form/contact-recaptcha/php/process_reCaptcha.php'
+									remote:'/processReCaptcha'
 								}
 						},
 						messages:{
 								sendername: {
-										required: 'Enter your name',
-										minlength: 'Name must be at least 2 characters'
+										required: 'Введите ваше имя',
+										minlength: 'Имя должно быть не короче 2 символов'
 								},				
 								emailaddress: {
-										required: 'Enter your email address',
-										email: 'Enter a VALID email address'
+										required: 'Введите ваш email адрес',
+										email: 'Введите корректный email адрес'
 								},
 								sendersubject: {
-										required: 'Subject is important',
+										required: 'Введите тему',
 										minlength: 'Subject must be at least 4 characters'
 								},														
 								sendermessage: {
-										required: 'Oops you forgot your message',
-										minlength: 'Message must be at least 10 characters'
+										required: 'Введите сообщение',
+										minlength: 'Сообщение должно быть не короче 10 символов'
 								},															
 								"g-recaptcha-response":{
-										required: 'Check reCaptcha for verification',
-										remote:'Invalid reCaptcha verification'
+										required: 'Отметьте reCaptcha для верификации',
+										remote:'Ошибка reCaptcha верификации'
 								}
 						},
 						highlight: function(element, errorClass, validClass) {
